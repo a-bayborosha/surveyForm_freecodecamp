@@ -1,0 +1,81 @@
+@import"zeroing.scss";
+body {
+    background: #cccfa3;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    h1 {
+        font-size: 3rem;
+        color: rgb(81, 76, 175);
+        font-weight: 900;
+    }
+    header p {
+        font-size: 1.3rem;
+        color: rgb(33, 30, 104);
+        text-align: center;
+    }
+}
+
+.wrapper {
+    margin: 0 auto;
+    height: 1200px;
+    width: 1000px;
+    max-width: 1500px;
+    padding: 20px 20px;
+    color: bisque;
+    position: relative;
+    .header {
+        .title {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        margin-bottom: 1.2rem;
+    }
+    .survey-form {
+        -webkit-box-shadow: 0px 0px 23px 2px #000000;
+        box-shadow: 0px 0px 23px 2px #000000;
+        line-height: 2rem;
+        border-radius: 5px;
+        background: rgb(18, 13, 125);
+        background: linear-gradient(0deg, rgba(57, 120, 206, 1) 10%, #1a166d 100%, rgba(55, 112, 215, 1) 100%);
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 3rem 4rem 3rem;
+        p {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(201, 204, 207);
+        }
+        .div {
+            input {
+                width: 100%;
+                height: 2rem;
+                padding-left: 1rem;
+            }
+        }
+        .form__element {
+            margin-bottom: 10px;
+            input {
+                margin-top: 0.6rem;
+                display: block;
+            }
+            textarea {
+                width: 100%;
+                padding-left: 1rem;
+                padding-top: 1rem;
+            }
+            .submit__button {
+                width: 100%;
+                height: 3rem;
+                border-radius: 0.5rem;
+                background-color: #1948ad;
+                color: #cccfa3;
+                font-size: 1.5rem;
+                -webkit-box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 0px 0px 23px 9px rgba(43, 80, 255, 0);
+                box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 0px 0px 23px 9px rgba(43, 80, 255, 0);
+            }
+        }
+    }
+}

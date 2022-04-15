@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 id="title" class="title">Skydiver Survey Form</h1>
+            <p id="description">with this form, we would like to know about your level.</p>
+        </header>
+        <form action="" id="survey-form" class="survey-form">
+            <div class="div">
+                <div class="form__element">
+                    <label for="name" id="name-label" class="name-label">Name</label>
+                    <input id="name" class="form__control" type="text" placeholder="name" name="name" required>
+                </div>
+                <div class="form__element">
+                    <label for="email" id="email-label" class="email-label">Email</label>
+                    <input id="email" class="form__control" type="email" placeholder="Email" name="email" required>
+                </div>
+                <div class="form__element">
+                    <label for="size" id="number-label" class="number-label">Your main canopy size</label>
+                    <input type="number" min="30" max="290" class="form__control" id="number" type="number" placeholder="Canopy Size" name="size">
+                </div>
+            </div>
+            <div id="prof-level" class="form__element">
+                <p>Describe your professional level</p>
+                <select id="dropdown" class="form__control" name="level" required>
+                    <option disabled selected value>Select you level</option>
+                    <option value="novice">Novice</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="experienced">Experienced</option>
+                </select>
+            </div>
+            <div id="radio-buttons" class="form__element">
+                <p>The manufacturer of your main canopy</p>
+                <label for="canopy-manufacturer">
+                    <input class="input__radio" type="radio" name="canopy-manufacturer" value="pd" checked>
+                    Performance Design
+
+                    <input class="input__radio" type="radio" name="canopy-manufacturer" value="ic">
+                    Icarus Canopies
+
+                   <input class="input__radio" type="radio" name="canopy-manufacturer" value="ac">
+                    Atair Canopies
+
+                    <input class="input__radio" type="radio" name="canopy-manufacturer" value="aerodyne">
+                    Aerodyne
+
+                    <input class="input__radio" type="radio" name="canopy-manufacturer" value="skylark">
+                    Skylark
+                </label>
+            </div>
+            <div id="checkboxes" class="form__element">
+                <p>Check you skydiving activities</p>
+                <label for="rw">
+                    <input type="checkbox" name="rw" id="rw" value="rw">
+                    RW
+                </label>
+                <label for="ff">
+                    <input type="checkbox" name="ff" id="ff" value="ff">
+                    Freefly
+                </label>
+                <label for="swp">
+                    <input type="checkbox" name="swp" id="swp" value="swp">
+                    Swoop
+                </label>
+                <label for="fs">
+                    <input type="checkbox" name="fs" id="fs" value="fs">
+                    Freestyle
+                </label>
+                <label for="al">
+                    <input type="checkbox" name="al" id="al" value="al">
+                    Accuracy landing
+                </label>
+                <label for="wsf">
+                    <input type="checkbox" name="wsf" id="wsf" value="wsf">
+                    Wingsuit flying
+                </label>
+                <label for="tdm">
+                    <input type="checkbox" name="tdm" id="tdm" value="tdm">
+                    Tandem
+                </label>
+                <label for="bj">
+                    <input type="checkbox" name="bj" id="bj" value="bj">
+                    Balloon jumps 
+                </label>
+                <label for="nj">
+                    <input type="checkbox" name="nj" id="nj" value="nj">
+                    Night jumps 
+                </label>
+                <label for="bs">
+                    <input type="checkbox" name="bs" id="bs" value="bs">
+                    BASE jumping 
+                </label>
+            </div>
+            <div class="form__element">
+                <p>Do you want to add something?</p>
+                <textarea form="survey-form" name="text" id="" cols="30" rows="10" placeholder="Enter your 'something' here"></textarea>
+            </div>
+            <div class="form__element">
+                <button id="submit" class="submit__button" type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
